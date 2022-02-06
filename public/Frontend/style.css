@@ -1,0 +1,114 @@
+html{
+}
+body{
+    background: lightblue;
+    font-family: 'Space Mono', monospace;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.footer{
+    position: fixed;
+    bottom:0px;
+    right: 0;
+    left: 0;
+}
+.card{
+    border-radius: 10px;
+
+}
+
+.header{
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+.header .card{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.footer .card{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.footer span,.metismenu-icon{
+    transition: .5s all ease;
+}
+.footer a:hover span{
+    transform: scale(1.2);
+    color: #2d505b !important;
+}
+.footer a:hover .metismenu-icon{
+    transform: scale(1.3);
+    color: #0b5885;
+}
+
+#app{
+    margin-top: 65px ;
+    margin-bottom: 63px;
+}
+
+/*<!---Scan box ->*/
+.scan-box{
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: 35px;
+    border-radius: 100%;
+    background: #add8e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scan-box a{
+    width: 80%;
+    height: 80%;
+    background: grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: glow 5s infinite;
+
+}
+@keyframes glow {
+    0%{
+        box-shadow: 0 0 -10px black;
+    }40%{
+         box-shadow: 0 0 10px #0f6b60;
+     }60%{
+          box-shadow: 0 0 20px #09a492;
+      }100%{
+           box-shadow: 0 0 -10px #00b09b;
+       }
+}
+@media screen and (max-width: 580px) {
+
+    .footer a:hover span, .footer a:hover i{
+        transform: scale(1.2);
+        color: #2d505b !important;
+    }
+
+        .swal2-title{
+            font-size: 19px !important;
+        }
+    .swal2-icon{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .swal2-icon .swal2-icon-content {
+        font-size: 40px !important;
+    }
+    /*.qr_box img{*/
+    /*    width: 100px !important;*/
+    /*    height: 100px !important;*/
+    /*}*/
+
+}
